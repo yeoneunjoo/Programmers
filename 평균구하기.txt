@@ -7,7 +7,7 @@ class Solution {
             sum += num;
         }
         
-		answer = sum/(arr.length);
+	answer = sum/(arr.length);
         return answer;
     }
 }
