@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+class Solution {
+    public int solution(int n) {
+        ArrayList<Integer> divisor = new ArrayList();
+        int answer = 0;
+        for(int i=1 ; i<=n ; i++) {
+            if(n%i==0){
+                divisor.add(i);
+            }
+        }
+        for(int div : divisor) {
+            answer += div;
+        }
+        return answer;
+    }
+}
